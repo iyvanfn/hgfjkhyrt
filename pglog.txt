@@ -1,0 +1,194 @@
+2022-01-08 04:04:53.823 MSK [1898] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-01-08 04:04:53.823 MSK [1898] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-01-08 04:04:53.836 MSK [1898] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-08 04:04:53.862 MSK [1899] LOG:  database system was shut down at 2022-01-08 03:44:45 MSK
+2022-01-08 04:04:53.891 MSK [1898] LOG:  database system is ready to accept connections
+2022-01-08 04:12:34.747 MSK [1898] LOG:  received smart shutdown request
+2022-01-08 04:12:34.756 MSK [1898] LOG:  background worker "logical replication launcher" (PID 1905) exited with exit code 1
+2022-01-08 04:12:34.756 MSK [1900] LOG:  shutting down
+2022-01-08 05:05:51.836 MSK [1894] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-01-08 05:05:51.838 MSK [1894] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-01-08 05:05:51.856 MSK [1894] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-08 05:05:51.887 MSK [1895] LOG:  database system was shut down at 2022-01-08 04:12:34 MSK
+2022-01-08 05:05:51.921 MSK [1894] LOG:  database system is ready to accept connections
+2022-01-08 05:06:00.881 MSK [1894] LOG:  received fast shutdown request
+2022-01-08 05:06:00.888 MSK [1894] LOG:  aborting any active transactions
+2022-01-08 05:06:00.889 MSK [1894] LOG:  background worker "logical replication launcher" (PID 1901) exited with exit code 1
+2022-01-08 05:06:00.889 MSK [1896] LOG:  shutting down
+2022-01-08 05:06:00.946 MSK [1894] LOG:  database system is shut down
+2022-01-21 13:24:11.498 MSK [1779] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-01-21 13:24:11.503 MSK [1779] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-01-21 13:24:11.509 MSK [1779] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-21 13:24:11.520 MSK [1780] LOG:  database system shutdown was interrupted; last known up at 2022-01-08 05:27:13 MSK
+2022-01-21 13:24:11.634 MSK [1780] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-21 13:24:11.644 MSK [1780] LOG:  redo starts at 0/18CDBA0
+2022-01-21 13:24:11.644 MSK [1780] LOG:  invalid record length at 0/18CDBD8: wanted 24, got 0
+2022-01-21 13:24:11.644 MSK [1780] LOG:  redo done at 0/18CDBA0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-01-21 13:24:11.666 MSK [1779] LOG:  database system is ready to accept connections
+2022-01-21 14:29:55.817 MSK [2087] ERROR:  syntax error at or near "CRREATE" at character 1
+2022-01-21 14:29:55.817 MSK [2087] STATEMENT:  CRREATE VIEW roots AS
+		SELECT round(x::numeric, 2) AS x FROM fn WHERE abs(y) < 0.0013 ORDER BY x;
+2022-01-21 15:18:19.640 MSK [1779] LOG:  received smart shutdown request
+2022-01-21 15:18:19.645 MSK [1779] LOG:  background worker "logical replication launcher" (PID 1786) exited with exit code 1
+2022-01-21 15:18:19.645 MSK [1781] LOG:  shutting down
+2022-01-22 11:10:19.328 MSK [1785] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-01-22 11:10:19.329 MSK [1785] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-01-22 11:10:19.523 MSK [1785] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-22 11:10:19.790 MSK [1786] LOG:  database system shutdown was interrupted; last known up at 2022-01-21 15:18:19 MSK
+2022-01-22 11:10:20.048 MSK [1786] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-22 11:10:20.143 MSK [1786] LOG:  redo starts at 0/19A4558
+2022-01-22 11:10:20.143 MSK [1786] LOG:  invalid record length at 0/19A46B8: wanted 24, got 0
+2022-01-22 11:10:20.143 MSK [1786] LOG:  redo done at 0/19A4640 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-01-22 11:10:20.981 MSK [1785] LOG:  database system is ready to accept connections
+2022-01-22 11:20:57.576 MSK [1785] LOG:  received smart shutdown request
+2022-01-22 11:20:57.589 MSK [1795] FATAL:  terminating connection due to administrator command
+2022-01-22 11:20:57.589 MSK [1795] LOG:  could not send data to client: Broken pipe
+2022-01-22 11:21:28.781 MSK [1776] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-01-22 11:21:28.782 MSK [1776] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-01-22 11:21:28.787 MSK [1776] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-22 11:21:28.798 MSK [1777] LOG:  database system was interrupted; last known up at 2022-01-22 11:10:20 MSK
+2022-01-22 11:21:28.943 MSK [1777] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-22 11:21:28.950 MSK [1777] LOG:  redo starts at 0/19A4730
+2022-01-22 11:21:28.950 MSK [1777] LOG:  invalid record length at 0/19A4768: wanted 24, got 0
+2022-01-22 11:21:28.950 MSK [1777] LOG:  redo done at 0/19A4730 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-01-22 11:21:28.972 MSK [1776] LOG:  database system is ready to accept connections
+2022-01-22 11:26:43.207 MSK [1786] ERROR:  relation "positive" does not exist at character 18
+2022-01-22 11:26:43.207 MSK [1786] STATEMENT:  SELECT x, y FROM positive ORDER BY x LIMIT 20;
+2022-01-22 11:34:10.490 MSK [1815] ERROR:  syntax error at or near "-" at character 21
+2022-01-22 11:34:10.490 MSK [1815] STATEMENT:  UPDATE positive SET -y = y WHERE y < 0.5;
+2022-01-24 14:20:31.610 MSK [1815] ERROR:  relation "positive" already exists
+2022-01-24 14:20:31.610 MSK [1815] STATEMENT:  CREATE VIEW positive AS SELECT x, y FROM fn WHERE y > 0.0;
+2022-01-24 16:38:51.097 MSK [14287] ERROR:  relation "fn_backup" does not exist at character 8
+2022-01-24 16:38:51.097 MSK [14287] STATEMENT:  UPDATE fn_backup SET y = 0;
+2022-01-24 17:15:27.062 MSK [14471] ERROR:  syntax error at or near "SELECT" at character 21
+2022-01-24 17:15:27.062 MSK [14471] STATEMENT:  SELECT * FROM pg_ex
+	SELECT * FROM pg_extension;
+2022-01-24 17:20:17.820 MSK [14495] ERROR:  syntax error at or near "ANALIZE" at character 9
+2022-01-24 17:20:17.820 MSK [14495] STATEMENT:  EXPLAIN ANALIZE SELECT * FROM fn_file WHERE x > 10.0;
+2022-01-24 17:20:33.294 MSK [14495] ERROR:  could not open file "/Users/user/Documents/sine.csv" for reading: No such file or directory
+2022-01-24 17:20:33.294 MSK [14495] HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+2022-01-24 17:20:33.294 MSK [14495] STATEMENT:  EXPLAIN ANALYZE SELECT * FROM fn_file WHERE x > 10.0;
+2022-01-24 17:37:03.138 MSK [14495] ERROR:  relation "fn_file" already exists
+2022-01-24 17:37:03.138 MSK [14495] STATEMENT:  CREATE FOREIGN TABLE fn_file(x FLOAT, y FLOAT) SERVER file_server OPTIONS (filename '/Users/user/sine.csv', format 'csv');
+2022-01-24 17:46:20.780 MSK [14495] ERROR:  syntax error at or near "DROP" at character 28
+2022-01-24 17:46:20.780 MSK [14495] STATEMENT:  DROP FOREIGN TABLE fn_file
+	DROP FOREIGN TABLE;
+2022-01-24 17:46:49.101 MSK [14495] ERROR:  could not open file "/Users/user/sine.csv" for reading: No such file or directory
+2022-01-24 17:46:49.101 MSK [14495] HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+2022-01-24 17:46:49.101 MSK [14495] STATEMENT:  EXPLAIN ANALYZE SELECT * FROM fn_file WHERE x > 10.0;
+2022-01-24 18:49:25.966 MSK [14837] ERROR:  syntax error at or near "SELECT" at character 24
+2022-01-24 18:49:25.966 MSK [14837] STATEMENT:  SELECT * FROM fn_viewl
+	SELECT * FROM fn_view;
+2022-01-24 18:59:43.654 MSK [14882] ERROR:  relation "fn_file" does not exist at character 50
+2022-01-24 18:59:43.654 MSK [14882] STATEMENT:  CREATE MATERIALIZED VIEW fn_all AS SELECT * FROM fn_file WITH DATA;
+2022-01-25 09:17:53.605 MSK [1776] LOG:  received smart shutdown request
+2022-01-25 09:17:53.617 MSK [14907] FATAL:  terminating connection due to administrator command
+2022-01-25 09:17:53.617 MSK [14907] LOG:  could not send data to client: Broken pipe
+2022-01-25 09:17:53.621 MSK [1776] LOG:  background worker "logical replication launcher" (PID 1783) exited with exit code 1
+2022-01-25 09:17:53.622 MSK [1778] LOG:  shutting down
+2022-01-25 11:55:28.854 MSK [1785] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-01-25 11:55:28.857 MSK [1785] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-01-25 11:55:28.863 MSK [1785] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-25 11:55:28.874 MSK [1786] LOG:  database system shutdown was interrupted; last known up at 2022-01-25 09:17:53 MSK
+2022-01-25 11:55:29.012 MSK [1786] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-25 11:55:29.018 MSK [1786] LOG:  redo starts at 0/2003A58
+2022-01-25 11:55:29.018 MSK [1786] LOG:  invalid record length at 0/2003B40: wanted 24, got 0
+2022-01-25 11:55:29.018 MSK [1786] LOG:  redo done at 0/2003B08 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-01-25 11:55:29.044 MSK [1785] LOG:  database system is ready to accept connections
+2022-01-25 12:19:25.926 MSK [1886] FATAL:  database "g394-makarov" does not exist
+2022-01-25 12:20:19.833 MSK [1884] ERROR:  syntax error at or near "db" at character 8
+2022-01-25 12:20:19.833 MSK [1884] STATEMENT:  create db "g394-makarov"
+	create db "g394-makarov";
+2022-01-25 12:21:08.705 MSK [1884] ERROR:  syntax error at or near "createdb" at character 1
+2022-01-25 12:21:08.705 MSK [1884] STATEMENT:  createdb "g394-makarov";
+2022-01-25 12:24:27.497 MSK [1920] ERROR:  relation "lab_view.fn" does not exist at character 29
+2022-01-25 12:24:27.497 MSK [1920] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.fn;
+2022-01-25 12:24:27.499 MSK [1920] ERROR:  relation "lab_view.fn_backup" does not exist at character 29
+2022-01-25 12:24:27.499 MSK [1920] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.fn_backup;
+2022-01-25 12:24:27.501 MSK [1920] ERROR:  relation "lab_view.positive" does not exist at character 29
+2022-01-25 12:24:27.501 MSK [1920] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.positive;
+2022-01-25 12:24:27.502 MSK [1920] ERROR:  relation "lab_view.roots" does not exist at character 29
+2022-01-25 12:24:27.502 MSK [1920] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.roots;
+2022-01-25 12:24:27.504 MSK [1920] ERROR:  relation "lab_view.roots_group" does not exist at character 29
+2022-01-25 12:24:27.504 MSK [1920] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.roots_group;
+2022-01-25 12:26:33.591 MSK [1949] ERROR:  relation "lab_view.fn" does not exist at character 29
+2022-01-25 12:26:33.591 MSK [1949] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.fn;
+2022-01-25 12:26:33.592 MSK [1949] ERROR:  relation "lab_view.fn_backup" does not exist at character 29
+2022-01-25 12:26:33.592 MSK [1949] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.fn_backup;
+2022-01-25 12:26:33.595 MSK [1949] ERROR:  relation "lab_view.positive" does not exist at character 29
+2022-01-25 12:26:33.595 MSK [1949] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.positive;
+2022-01-25 12:26:33.596 MSK [1949] ERROR:  relation "lab_view.roots" does not exist at character 29
+2022-01-25 12:26:33.596 MSK [1949] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.roots;
+2022-01-25 12:26:33.598 MSK [1949] ERROR:  relation "lab_view.roots_group" does not exist at character 29
+2022-01-25 12:26:33.598 MSK [1949] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.roots_group;
+2022-01-25 12:32:55.715 MSK [1989] ERROR:  relation "lab_view.roots_group" does not exist at character 29
+2022-01-25 12:32:55.715 MSK [1989] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.roots_group;
+2022-01-25 14:29:38.611 MSK [1785] LOG:  received smart shutdown request
+2022-01-25 14:29:38.619 MSK [1999] FATAL:  terminating connection due to administrator command
+2022-01-25 14:29:38.619 MSK [1999] LOG:  could not send data to client: Broken pipe
+2022-01-25 14:29:38.620 MSK [1785] LOG:  background worker "logical replication launcher" (PID 1792) exited with exit code 1
+2022-01-25 14:29:38.620 MSK [1787] LOG:  shutting down
+2022-01-31 15:03:15.514 MSK [10444] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-01-31 15:03:15.514 MSK [10444] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-01-31 15:03:15.520 MSK [10444] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-31 15:03:15.539 MSK [10445] LOG:  database system shutdown was interrupted; last known up at 2022-01-25 14:29:38 MSK
+2022-01-31 15:03:15.724 MSK [10445] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-31 15:03:15.730 MSK [10445] LOG:  redo starts at 0/2052AB8
+2022-01-31 15:03:15.730 MSK [10445] LOG:  invalid record length at 0/2052BA0: wanted 24, got 0
+2022-01-31 15:03:15.730 MSK [10445] LOG:  redo done at 0/2052B68 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-01-31 15:03:15.752 MSK [10444] LOG:  database system is ready to accept connections
+2022-01-31 15:31:22.218 MSK [10550] ERROR:  relation "lab_view.roots_group" does not exist at character 29
+2022-01-31 15:31:22.218 MSK [10550] STATEMENT:  SELECT COUNT(*) AS cnt FROM lab_view.roots_group;
+2022-01-31 15:39:38.925 MSK [10556] ERROR:  relation "t1" already exists
+2022-01-31 15:39:38.925 MSK [10556] STATEMENT:  create table t1 (z integer);
+2022-01-31 16:51:50.578 MSK [10730] ERROR:  syntax error at or near "desc" at character 84
+2022-01-31 16:51:50.578 MSK [10730] STATEMENT:  select schemaname, tablename from pg_tables where tableowner = 'postgres' order by desc tablename;
+2022-01-31 17:23:41.270 MSK [10730] ERROR:  relation "t1" does not exist at character 15
+2022-01-31 17:23:41.270 MSK [10730] STATEMENT:  select * from t1;
+2022-02-04 13:55:09.666 MSK [10444] LOG:  received smart shutdown request
+2022-02-04 13:55:09.672 MSK [10444] LOG:  background worker "logical replication launcher" (PID 10451) exited with exit code 1
+2022-02-04 13:55:09.672 MSK [10446] LOG:  shutting down
+2022-02-04 13:55:09.694 MSK [10444] LOG:  database system is shut down
+2022-02-15 11:28:16.812 MSK [1782] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-02-15 11:28:16.813 MSK [1782] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-02-15 11:28:16.820 MSK [1782] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-02-15 11:28:16.841 MSK [1783] LOG:  database system was shut down at 2022-02-04 13:55:09 MSK
+2022-02-15 11:28:16.855 MSK [1782] LOG:  database system is ready to accept connections
+2022-02-15 11:37:19.705 MSK [1832] FATAL:  database "g394-markov-3" does not exist
+2022-02-15 11:38:51.807 MSK [1840] FATAL:  database "g394-markov-3" does not exist
+2022-02-15 11:39:20.055 MSK [1842] FATAL:  database "g394-markov-3" does not exist
+2022-02-15 11:44:24.456 MSK [1866] FATAL:  database "g394-markov-lab25" does not exist
+2022-02-15 11:45:05.792 MSK [1878] FATAL:  database "g394-markov-lab25" does not exist
+2022-02-15 11:47:55.211 MSK [1861] ERROR:  syntax error at or near "-" at character 21
+2022-02-15 11:47:55.211 MSK [1861] STATEMENT:  create database g394-markov-lab25
+	CREATE DATABASE g394-markov-lab25
+	createdb g394-markov-lab25;
+2022-02-15 11:48:05.003 MSK [1861] ERROR:  syntax error at or near "createdb" at character 1
+2022-02-15 11:48:05.003 MSK [1861] STATEMENT:  createdb g394-markov-lab25;
+2022-02-15 11:48:15.196 MSK [1861] ERROR:  syntax error at or near "-" at character 21
+2022-02-15 11:48:15.196 MSK [1861] STATEMENT:  create database g394-markov-lab25;
+2022-02-15 11:55:11.253 MSK [1903] ERROR:  syntax error at or near "(" at character 14
+2022-02-15 11:55:11.253 MSK [1903] STATEMENT:  create table (id integer, first varchar(50), last varchar(50), sex char(1));
+2022-02-15 12:50:13.628 MSK [1782] LOG:  received smart shutdown request
+2022-02-15 12:50:13.638 MSK [1903] FATAL:  terminating connection due to administrator command
+2022-02-15 12:50:13.638 MSK [1903] LOG:  could not send data to client: Broken pipe
+2022-02-15 12:50:13.641 MSK [1782] LOG:  background worker "logical replication launcher" (PID 1789) exited with exit code 1
+2022-02-15 12:50:13.641 MSK [1784] LOG:  shutting down
+2022-02-24 13:27:47.749 MSK [1774] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-02-24 13:27:47.749 MSK [1774] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-02-24 13:27:47.755 MSK [1774] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-02-24 13:27:47.769 MSK [1775] LOG:  database system shutdown was interrupted; last known up at 2022-02-15 12:50:13 MSK
+2022-02-24 13:27:47.958 MSK [1775] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-02-24 13:27:47.965 MSK [1775] LOG:  redo starts at 0/20C63A8
+2022-02-24 13:27:47.965 MSK [1775] LOG:  invalid record length at 0/20C6490: wanted 24, got 0
+2022-02-24 13:27:47.965 MSK [1775] LOG:  redo done at 0/20C6458 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-02-24 13:27:47.991 MSK [1774] LOG:  database system is ready to accept connections
+2022-03-01 11:42:59.410 MSK [1825] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 10.3.1_git20211027) 10.3.1 20211027, 64-bit
+2022-03-01 11:42:59.411 MSK [1825] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-03-01 11:42:59.419 MSK [1825] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-03-01 11:42:59.434 MSK [1826] LOG:  database system was interrupted; last known up at 2022-02-24 17:42:51 MSK
+2022-03-01 11:42:59.642 MSK [1826] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-01 11:42:59.648 MSK [1826] LOG:  redo starts at 0/20C7140
+2022-03-01 11:42:59.648 MSK [1826] LOG:  invalid record length at 0/20C7228: wanted 24, got 0
+2022-03-01 11:42:59.648 MSK [1826] LOG:  redo done at 0/20C71F0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-01 11:42:59.676 MSK [1825] LOG:  database system is ready to accept connections
